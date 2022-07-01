@@ -39,7 +39,7 @@ If you want to host the bot yourself...
 5. Move the bot role to the top of the role list. This is important because even if the bot has permissions to manage roles, it can only manage the roles that are below his role.  
 6. Add the bot to be able to view and message in the verifier channel.  
   
-*Things I would add/change:**
+**Things I would add/change:**
 Obviously this application is not perfect by any means and there are improvements I would like to implement and will be discussing them here.  
 - The first obvious improvement I would like to add to the bot is to have it be able to be more flexible and auto set up itself to the server once invited. Setting up and deploying these kind of applications is definitely an headache, but ideally it is just a one time set up and we can forget about it afterwards. However, realistically things tend change, and if we wanted to change/improve the server in some way, say add another role we want to confirm, we would have to go directly into the code and change certain details for the bot to support this. I would love it if this bot supported things like flexible channels for confirmation, flexible role assigning, etc.   
 - I want to change the implementation of how users send a verification request. Looking at the process right now, a glaring issue is that the user has to send a screenshot of their student portal, which may have sensitive information such as their phone number and email. One implementation that could combat this issue is to have the user directly message the bot with a verify command along with the proof of confirmation. This will allow the user to avoid sending information for the entire server to view, while still allowing the bot to resend the image into a verifier only channel.  
